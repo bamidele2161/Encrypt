@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="uploadContainer">
+        <h1 class="uploadTitle">ENCRYPTION/DECRYPTION ENGINE </h1>
+        <div class="uploadDiv">
+        <label htmlFor="uploadFile">
+            <PublishOutlined class="uploadIcon"/> 
+            <span> Click to upload image</span>
+        </label> 
+            <input type="file" name="file" id="uploadFile" 
+            accept=".jpg,.jpeg,.git,.png,.mp4" 
+            onChange={handleImageChange}
+            />
+        </div>
+
+        <div class="uploadTop">
+            <button class="clickButton"
+            onClick={encryptHandler} 
+        
+            >
+
+                ENCRYPT</button>
+            <button class="clickButtonRight"
+            
+            >DECRYPT </button>
+        </div>
+           
+        <div class="resultDiv">
+            <div class="left">
+                <img class="resultImage" src="" ></img>
+            </div>
+        </div>
+
+        <a class="downloadFile" href="" download>
+            <GetApp class="uploadIcon"/> 
+            <span class="downloadSpan">CLICK TO DOWNLOAD FILE</span>
+        </a>
+    </div>
+</body>
+</html>
